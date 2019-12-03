@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vk-sw-tree/static/css/main.981f7211.chunk.css",
+    "main.js": "/vk-sw-tree/static/js/main.1a83698b.chunk.js",
+    "main.js.map": "/vk-sw-tree/static/js/main.1a83698b.chunk.js.map",
+    "runtime-main.js": "/vk-sw-tree/static/js/runtime-main.5007d2d3.js",
+    "runtime-main.js.map": "/vk-sw-tree/static/js/runtime-main.5007d2d3.js.map",
+    "static/css/2.2cfa1b23.chunk.css": "/vk-sw-tree/static/css/2.2cfa1b23.chunk.css",
+    "static/js/2.ae9e17d7.chunk.js": "/vk-sw-tree/static/js/2.ae9e17d7.chunk.js",
+    "static/js/2.ae9e17d7.chunk.js.map": "/vk-sw-tree/static/js/2.ae9e17d7.chunk.js.map",
+    "index.html": "/vk-sw-tree/index.html",
+    "precache-manifest.025008ad333e3a8bf53abab9ae6dfced.js": "/vk-sw-tree/precache-manifest.025008ad333e3a8bf53abab9ae6dfced.js",
+    "service-worker.js": "/vk-sw-tree/service-worker.js",
+    "static/css/2.2cfa1b23.chunk.css.map": "/vk-sw-tree/static/css/2.2cfa1b23.chunk.css.map",
+    "static/css/main.981f7211.chunk.css.map": "/vk-sw-tree/static/css/main.981f7211.chunk.css.map",
+    "static/media/persik.png": "/vk-sw-tree/static/media/persik.4e1ec840.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5007d2d3.js",
+    "static/css/2.2cfa1b23.chunk.css",
+    "static/js/2.ae9e17d7.chunk.js",
+    "static/css/main.981f7211.chunk.css",
+    "static/js/main.1a83698b.chunk.js"
+  ]
+}
