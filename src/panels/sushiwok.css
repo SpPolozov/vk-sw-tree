@@ -6,3 +6,11 @@
 .Panel .Panel__in {
     background-color: #ffffff;
 }
+
+.main-tree img {
+    height: 75vh;
+}
+
+.main-tree {
+    text-align: center;
+}

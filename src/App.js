@@ -65,7 +65,7 @@ class App extends React.Component {
 				<View id="presents" activePanel="presents">
 					<Panel id="presents">
 						<PanelHeader><img className="PanelHeaderLogo" src={logoSw} alt="СушиWok" /></PanelHeader>
-						<div>
+						<div class="main-tree">
 							<img src={tree} alt="tree" />
 						</div>
 					</Panel>
