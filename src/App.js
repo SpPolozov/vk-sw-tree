@@ -4,7 +4,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem, Epic} from '@vkontakte/vkui';
 import Icon28Newsfeed from '@vkontakte/icons/dist/28/chevron_back';
 import Icon28Search from '@vkontakte/icons/dist/28/chevron_back';
-import logoSw from './img/menu-tree-black.svg';
+import menuTreeBlack from './img/menu-tree-black.svg';
 
 class App extends React.Component {
 	constructor (props) {
@@ -28,7 +28,7 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'presents'}
 						data-story="presents"
 						text="">
-						<img src={logoSw} width="28px" />
+						<img src={menuTreeBlack} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
