@@ -4,12 +4,13 @@ import '@vkontakte/vkui/dist/vkui.css';
 import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem, Epic} from '@vkontakte/vkui';
 import Icon28Newsfeed from '@vkontakte/icons/dist/28/chevron_back';
 import Icon28Search from '@vkontakte/icons/dist/28/chevron_back';
+import logoSw from '../img/logo-sw.svg';
 
 class App extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
-			activeStory: 'feed'
+			activeStory: 'presents'
 		};
 		this.onStoryChange = this.onStoryChange.bind(this);
 	}
@@ -24,28 +25,40 @@ class App extends React.Component {
 				<Tabbar>
 					<TabbarItem
 						onClick={this.onStoryChange}
-						selected={this.state.activeStory === 'feed'}
-						data-story="feed"
-						text="Новости"
-					>
-						<Icon28Newsfeed />
+						selected={this.state.activeStory === 'presents'}
+						data-story="presents"
+						text="">
+						<img src={logoSw} />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
-						selected={this.state.activeStory === 'discover'}
-						data-story="discover"
-						text="Поиск"
-					><Icon28Search/></TabbarItem>
+						selected={this.state.activeStory === 'achivments'}
+						data-story="achivments"
+						text="Поиск">
+						<Icon28Search/>
+					</TabbarItem>
+					<TabbarItem
+						onClick={this.onStoryChange}
+						selected={this.state.activeStory === 'settings'}
+						data-story="settings"
+						text="Поиск">
+						<Icon28Search/>
+					</TabbarItem>
 				</Tabbar>
 			}>
-				<View id="discover" activePanel="discover">
-					<Panel id="discover">
-						<PanelHeader>Discover</PanelHeader>
+				<View id="presents" activePanel="presents">
+					<Panel id="presents">
+						<PanelHeader>Подарки</PanelHeader>
 					</Panel>
 				</View>
-				<View id="feed" activePanel="feed">
-					<Panel id="feed">
-						<PanelHeader>Feed</PanelHeader>
+				<View id="achivments" activePanel="achivments">
+					<Panel id="achivments">
+						<PanelHeader>Награды</PanelHeader>
+					</Panel>
+				</View>
+				<View id="settings" activePanel="settings">
+					<Panel id="settings">
+						<PanelHeader>Настройки</PanelHeader>
 					</Panel>
 				</View>
 			</Epic>
