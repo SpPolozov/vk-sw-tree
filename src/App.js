@@ -5,6 +5,8 @@ import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem, Epic} 
 import Icon28Newsfeed from '@vkontakte/icons/dist/28/chevron_back';
 import Icon28Search from '@vkontakte/icons/dist/28/chevron_back';
 import menuTreeBlack from './img/menu-tree-black.svg';
+import menuAchivmentBlack from './img/menu-achivment-black.svg';
+import menuSettingsBlack from './img/menu-settings-black.svg';
 
 class App extends React.Component {
 	constructor (props) {
@@ -35,14 +37,14 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'achivments'}
 						data-story="achivments"
 						text="Поиск">
-						<Icon28Search/>
+						<img src={menuAchivmentBlack} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
 						selected={this.state.activeStory === 'settings'}
 						data-story="settings"
 						text="Поиск">
-						<Icon28Search/>
+						<img src={menuSettingsBlack} width="28px" />
 					</TabbarItem>
 				</Tabbar>
 			}>
