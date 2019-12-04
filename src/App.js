@@ -25,8 +25,8 @@ class App extends React.Component {
 						onClick={this.onStoryChange}
 						selected={this.state.activeStory === 'feed'}
 						data-story="feed"
-						text="Новости"
-					><Icon28Newsfeed/>
+						text="Новости">
+						<Icon28Newsfeed/>
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
