@@ -110,7 +110,7 @@ class App extends React.Component {
 						title: 'Сохранить промокод',
 						type: 'primary',
 						action: () => {
-							fetch('http://cdntree.32tb.ru/test.json')
+							fetch('https://cdntree.32tb.ru:8080/test.json')
 								.then(res => {
 									if(res.status !== 200) {
 										console.log(res.status);
