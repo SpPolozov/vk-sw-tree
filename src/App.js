@@ -45,7 +45,7 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'presents'}
 						data-story="presents"
 						text="">
-						<img src={this.state.menuTree}{(this.state.activeStory === 'presents')?'Color':''} width="28px" />
+						<img src="{${this.state.menuTree}(this.state.activeStory === 'presents')?'Color':''}" width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
