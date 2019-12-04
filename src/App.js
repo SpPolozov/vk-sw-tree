@@ -7,12 +7,23 @@ import Icon28Search from '@vkontakte/icons/dist/28/chevron_back';
 import menuTreeBlack from './img/menu-tree-black.svg';
 import menuAchivmentBlack from './img/menu-achivment-black.svg';
 import menuSettingsBlack from './img/menu-settings-black.svg';
+import menuTreeColor from './img/menu-tree-color.svg';
+import menuAchivmentColor from './img/menu-achivment-color.svg';
+import menuSettingsColor from './img/menu-settings-color.svg';
 
 class App extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
 			activeStory: 'presents'
+		};
+		this.footer = {
+			menuTree: menuTreeBlack,
+			menuAchivment: menuAchivmentBlack,
+			menuSettings: menuSettingsBlack,
+			menuTreeColor: menuTreeColor,
+			menuAchivmentColor: menuAchivmentColor,
+			menuSettingsColor: menuSettingsColor
 		};
 		this.onStoryChange = this.onStoryChange.bind(this);
 	}
@@ -30,7 +41,7 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'presents'}
 						data-story="presents"
 						text="">
-						<img src={menuTreeBlack} width="28px" />
+						<img src={this.footer.menuTree + (this.state.activeStory === 'presents')?'Color':''} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
