@@ -14,3 +14,9 @@
 .main-tree {
     text-align: center;
 }
+
+.bg-blue {
+    background: #D0DDED;
+    border-radius: 30px;
+    color: #333333;
+}
