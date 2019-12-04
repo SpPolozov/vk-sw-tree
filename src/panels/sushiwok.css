@@ -65,3 +65,7 @@
     justify-content: center;
     flex-flow: row wrap;
 }
+
+#root {
+    max-width: 450px;
+}
