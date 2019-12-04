@@ -24,3 +24,10 @@
 .main-status {
     width: 100%;
 }
+
+.main-achivments {
+    width: 100px;
+    float: left;
+    margin: 5px;
+    padding-left: 10px;
+}
