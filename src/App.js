@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '@vkontakte/vkui/dist/vkui.css';
-import { View, Panel, PanelHeader, Tabbar, TabbarItem, Epic} from '@vkontakte/vkui';
+import { View, Panel, PanelHeader, Tabbar, TabbarItem, Epic, ModalRoot, ModalCard} from '@vkontakte/vkui';
 import menuTreeBlack from './img/menu-tree-black.svg';
 import menuAchivmentBlack from './img/menu-achivment-black.svg';
 import menuSettingsBlack from './img/menu-settings-black.svg';
@@ -15,12 +15,16 @@ import mainAchivments from './img/main-achivment.svg';
 import mainKeys from './img/main-keys.svg';
 import presentClose from './img/present-close.svg';
 
+const MODAL_CARD_MONEY_SEND = 'money-send';
+
 class App extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
 			activeStory: 'presents',
-			menuTree: menuTreeBlack
+			menuTree: menuTreeBlack,
+			activeModal: null,
+			modalHistory: []
 		};
 		this.footer = {
 			menuTree: menuTreeBlack,
@@ -74,7 +78,44 @@ class App extends React.Component {
 		this.setState({ activeStory: e.currentTarget.dataset.story })
 	}
 
+	setActiveModal (activeModal) {
+		activeModal = activeModal || null;
+		let modalHistory = this.state.modalHistory ? [...this.state.modalHistory] : [];
+
+		if (activeModal === null) {
+			modalHistory = [];
+		} else if (modalHistory.indexOf(activeModal) !== -1) {
+			modalHistory = modalHistory.splice(0, modalHistory.indexOf(activeModal) + 1);
+		} else {
+			modalHistory.push(activeModal);
+		}
+
+		this.setState({
+			activeModal,
+			modalHistory
+		});
+	};
+
 	render () {
+		const modal = (
+			<ModalRoot activeModal={this.state.activeModal}>
+				<ModalCard
+					id={MODAL_CARD_MONEY_SEND}
+					onClose={() => this.setActiveModal(null)}
+					icon={}
+					title="Отправляйте деньги друзьям, используя банковскую карту"
+					caption="Номер карты получателя не нужен — он сам решит, куда зачислить средства."
+					actions={[{
+						title: 'Попробовать',
+						type: 'primary',
+						action: () => {
+						}
+					}]}
+				>
+				</ModalCard>
+			</ModalRoot>
+		);
+
 		return (
 			<Epic activeStory={this.state.activeStory} tabbar={
 				<Tabbar>
@@ -123,7 +164,7 @@ class App extends React.Component {
 									this.presents.items.map(item => {
 										return (
 											<div className="present close">
-												<img src={presentClose} alt="подарок" /><br />
+												<img src={presentClose} alt="подарок" onClick={() => this.setActiveModal(MODAL_CARD_MONEY_SEND)} /><br />
 												{item.text}
 											</div>
 										)

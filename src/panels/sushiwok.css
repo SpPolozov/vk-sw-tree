@@ -65,3 +65,9 @@
     justify-content: center;
     flex-flow: row wrap;
 }
+
+.title-block {
+    font-family: Helvetica;
+    font-size: 24px;
+    color: #333333;
+}
