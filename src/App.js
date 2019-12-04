@@ -6,7 +6,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem, Epic} from '@vkontakte/vkui';
 import { Icon28Newsfeed, Icon28Search, Icon28Messages, Icon28Notifications, Icon28More} from '@vkontakte/icons/dist/28/chevron_back';
 
-export class App extends React.Component {
+class App extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
@@ -88,5 +88,5 @@ export class App extends React.Component {
 	}
 }
 
-//export class App;
+export default App;
 

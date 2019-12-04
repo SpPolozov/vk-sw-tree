@@ -3,6 +3,8 @@ import 'core-js/features/set';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import connect from '@vkontakte/vk-connect';
+import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem, Epic} from '@vkontakte/vkui';
+import { Icon28Newsfeed, Icon28Search, Icon28Messages, Icon28Notifications, Icon28More} from '@vkontakte/icons/dist/28/chevron_back';
 import App  from './App';
 // import registerServiceWorker from './sw';
 
