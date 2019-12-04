@@ -15,7 +15,8 @@ class App extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
-			activeStory: 'presents'
+			activeStory: 'presents',
+			menuTree: menuTreeBlack
 		};
 		this.footer = {
 			menuTree: menuTreeBlack,
@@ -41,7 +42,7 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'presents'}
 						data-story="presents"
 						text="">
-						<img src={this.footer.menuTree + (this.state.activeStory === 'presents')?'Color':''} width="28px" />
+						<img src={this.state.menuTree + (this.state.activeStory === 'presents')?'Color':''} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
