@@ -35,8 +35,6 @@ class App extends React.Component {
 			menuAchivmentColor: menuAchivmentColor,
 			menuSettingsColor: menuSettingsColor
 		};
-		connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273828, "key": "dBuBKe1kFcdemzB"});
-
 		this.presents = {
 			items: [
 				{text: '1 декабря', type: 'close'},
@@ -81,6 +79,7 @@ class App extends React.Component {
 	}
 
 	setActiveModal (activeModal) {
+		connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273828, "key": "dBuBKe1kFcdemzB"});
 		activeModal = activeModal || null;
 		let modalHistory = this.state.modalHistory ? [...this.state.modalHistory] : [];
 
