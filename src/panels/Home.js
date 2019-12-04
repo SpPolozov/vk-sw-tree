@@ -9,6 +9,7 @@ import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import logoSw from '../img/logo-sw.svg';
 import './sushiwok.css';
+import Footer from "./Footer";
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -30,6 +31,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
+		<Footer />
 	</Panel>
 );
 
