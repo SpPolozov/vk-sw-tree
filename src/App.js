@@ -75,7 +75,7 @@ class App extends React.Component {
 						<PanelHeader>More</PanelHeader>
 					</Panel>
 				</View>
-				<View id="feed">
+				<View id="feed" activePanel="feed">
 					<Panel id="feed">
 						<PanelHeader>Feed</PanelHeader>
 					</Panel>
@@ -85,7 +85,6 @@ class App extends React.Component {
 		);
 	}
 }
-<App />
 
 export default App;
 
