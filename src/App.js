@@ -14,6 +14,7 @@ import tree from "./img/first-xtree.svg";
 import mainAchivments from './img/main-achivment.svg';
 import mainKeys from './img/main-keys.svg';
 import presentClose from './img/present-close.svg';
+import connect from '@vkontakte/vk-connect';
 
 const MODAL_CARD_MONEY_SEND = 'money-send';
 
@@ -109,6 +110,7 @@ class App extends React.Component {
 						title: 'Сохранить промокод',
 						type: 'primary',
 						action: () => {
+							connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273828, "key": "dBuBKe1kFcdemzB"});
 						}
 					}]}
 				>
