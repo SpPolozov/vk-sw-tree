@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://sppolozov.github.io/vk-sw-tree/",
   "scripts": {
-    "start": "cross-env PORT=80 react-scripts start",
+    "start": "cross-env PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
