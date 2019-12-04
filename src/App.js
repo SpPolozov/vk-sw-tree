@@ -8,6 +8,7 @@ import menuSettingsBlack from './img/menu-settings-black.svg';
 import menuTreeColor from './img/menu-tree-color.svg';
 import menuAchivmentColor from './img/menu-achivment-color.svg';
 import menuSettingsColor from './img/menu-settings-color.svg';
+import './panels/sushiwok.css';
 
 class App extends React.Component {
 	constructor (props) {
@@ -61,7 +62,11 @@ class App extends React.Component {
 			}>
 				<View id="presents" activePanel="presents">
 					<Panel id="presents">
-						<PanelHeader>Подарки</PanelHeader>
+						<PanelHeader>
+							<div>
+								123
+							</div>
+						</PanelHeader>
 					</Panel>
 				</View>
 				<View id="achivments" activePanel="achivments">
