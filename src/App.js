@@ -98,7 +98,6 @@ class App extends React.Component {
 	};
 
 	render () {
-		connect.send("VKWebAppInit", {});
 		const modal = (
 			<ModalRoot activeModal={this.state.activeModal}>
 				<ModalCard
