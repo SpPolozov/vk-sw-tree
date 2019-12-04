@@ -27,8 +27,6 @@ class App extends React.Component {
 			menuSettingsColor: menuSettingsColor
 		};
 
-		console.log (this.footer.menuTree);
-		console.log ('12');
 		this.onStoryChange = this.onStoryChange.bind(this);
 	}
 
@@ -45,7 +43,7 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'presents'}
 						data-story="presents"
 						text="">
-						<img src="{${this.state.menuTree}(this.state.activeStory === 'presents')?'Color':''}" width="28px" />
+						<img src={${this.state.menuTree}(this.state.activeStory === 'presents')?'Color':''} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
