@@ -176,7 +176,7 @@ class App extends React.Component {
 								{
 									this.presents.items.map(item => {
 										return (
-											<div className="present close">
+											<div className="present close" data-key={item.key}>
 												<img src={presentClose} alt="подарок" onClick={() => this.setActiveModal(MODAL_CARD_MONEY_SEND)} /><br />
 												{item.text}
 											</div>
