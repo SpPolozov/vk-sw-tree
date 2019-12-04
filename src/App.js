@@ -6,7 +6,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem, Epic} from '@vkontakte/vkui';
 import { Icon28Newsfeed, Icon28Search, Icon28Messages, Icon28Notifications, Icon28More} from '@vkontakte/icons/dist/28/chevron_back';
 
-class App extends React.Component {
+export class App extends React.Component {
 	constructor (props) {
 		super(props);
 		this.state = {
@@ -28,7 +28,8 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'feed'}
 						data-story="feed"
 						text="Новости"
-					><Icon28Newsfeed/></TabbarItem>
+					><Icon28Newsfeed/>
+					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
 						selected={this.state.activeStory === 'discover'}
@@ -87,5 +88,5 @@ class App extends React.Component {
 	}
 }
 
-export default App;
+//export class App;
 
