@@ -26,6 +26,9 @@ class App extends React.Component {
 			menuAchivmentColor: menuAchivmentColor,
 			menuSettingsColor: menuSettingsColor
 		};
+
+		console.log (this.footer.menuTree);
+		console.log ('12');
 		this.onStoryChange = this.onStoryChange.bind(this);
 	}
 
