@@ -102,7 +102,7 @@ class App extends React.Component {
 				<ModalCard
 					id={MODAL_CARD_MONEY_SEND}
 					onClose={() => this.setActiveModal(null)}
-					icon={}
+					icon={<img src={logoSw} alt="logo" />}
 					title="Отправляйте деньги друзьям, используя банковскую карту"
 					caption="Номер карты получателя не нужен — он сам решит, куда зачислить средства."
 					actions={[{
