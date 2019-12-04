@@ -68,10 +68,10 @@ class App extends React.Component {
 					<Panel id="presents">
 						<PanelHeader><img className="PanelHeaderLogo" src={logoSw} alt="СушиWok" /></PanelHeader>
 						<div className="main-status">
-							<div className="main-achivments">
+							<div className="main-achivments bg-blue">
 								<img src={mainAchivments} alt="награды" />
 							</div>
-							<div className="main-keys">
+							<div className="main-keys bg-blue">
 								<img src={mainKeys} alt="ключики"/>
 							</div>
 						</div>
