@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { View, Panel, PanelHeader, Group, List, Cell } from '@vkontakte/vkui';
+import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem} from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import PropTypes from 'prop-types';
 import { platform, IOS } from '@vkontakte/vkui';
