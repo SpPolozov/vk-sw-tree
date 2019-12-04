@@ -31,6 +31,20 @@ class App extends React.Component {
 			menuSettingsColor: menuSettingsColor
 		};
 
+		this.presents = {
+			items: [
+				{text: '1 декабря', type: 'close'},
+				{text: '1 декабря', type: 'close'},
+				{text: '1 декабря', type: 'close'},
+				{text: '19 декабря', type: 'close'},
+				{text: '1 декабря', type: 'close'},
+				{text: '12 декабря', type: 'close'},
+				{text: '28 декабря', type: 'close'},
+				{text: '1 декабря', type: 'close'},
+				{text: '1 декабря', type: 'close'},
+			]
+		};
+
 		this.onStoryChange = this.onStoryChange.bind(this);
 	}
 
@@ -68,21 +82,27 @@ class App extends React.Component {
 				<View id="presents" activePanel="presents">
 					<Panel id="presents">
 						<PanelHeader><img className="PanelHeaderLogo" src={logoSw} alt="СушиWok" /></PanelHeader>
-						<div className="main-status">
-							<div className="main-achivments bg-blue">
-								<img src={mainAchivments} alt="награды" />
-								<span className="main-status-counters">0</span>
+						<div className="block-common">
+							<div className="main-status">
+								<div className="main-achivments bg-blue">
+									<img src={mainAchivments} alt="награды" />
+									<span className="main-status-counters">0</span>
+								</div>
+								<div className="main-keys bg-blue">
+									<img src={mainKeys} alt="ключики"/>
+									<span className="main-status-counters">0</span>
+								</div>
 							</div>
-							<div className="main-keys bg-blue">
-								<img src={mainKeys} alt="ключики"/>
-								<span className="main-status-counters">0</span>
+							<div className="main-tree">
+								<img src={tree} alt="tree" />
 							</div>
-						</div>
-						<div className="main-tree">
-							<img src={tree} alt="tree" />
-						</div>
-						<div className="present close">
-							<img src={presentClose} alt="подарок" />
+							<For each="item" in={this.presents.items}>
+								<div className="present close">
+									<img src={presentClose} alt="подарок" /><br />
+									{item.text}
+								</div>
+							</For>
+
 						</div>
 					</Panel>
 				</View>

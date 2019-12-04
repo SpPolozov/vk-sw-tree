@@ -7,6 +7,10 @@
     background-color: #ffffff;
 }
 
+.block-common {
+    padding: 0px 10px 0px 10px;
+}
+
 .main-tree img {
     height: 70vh;
 }
@@ -46,4 +50,11 @@
     margin-right: 25px;
     margin-top: 12px;
     font-size: 24px;
+}
+
+.present {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #939393;
+    text-align: left;
 }
