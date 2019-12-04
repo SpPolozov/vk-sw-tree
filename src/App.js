@@ -96,13 +96,16 @@ class App extends React.Component {
 							<div className="main-tree">
 								<img src={tree} alt="tree" />
 							</div>
-							<For each="item" in={this.presents.items}>
-								<div className="present close">
-									<img src={presentClose} alt="подарок" /><br />
-									{item.text}
-								</div>
-							</For>
-
+							{
+								this.presents.items.map(item => {
+									return (
+										<div className="present close">
+											<img src={presentClose} alt="подарок" /><br />
+											{item.text}
+										</div>
+									)
+								})
+							}
 						</div>
 					</Panel>
 				</View>
