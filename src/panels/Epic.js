@@ -10,7 +10,7 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Persik from "./Persik";
 
-class Epic extends React.Component {
+class Footer extends React.Component {
     constructor (props) {
         super(props);
 
@@ -92,4 +92,4 @@ class Epic extends React.Component {
     }
 }
 
-export default Epic;
+export default Footer;
