@@ -6,6 +6,7 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
+import Persik from "./Persik";
 
 class Epic extends React.Component {
     constructor (props) {
@@ -88,3 +89,5 @@ class Epic extends React.Component {
         )
     }
 }
+
+export default Epic;
