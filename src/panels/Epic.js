@@ -1,8 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { View, Panel, PanelHeader, Group, List, Cell } from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
 import PropTypes from 'prop-types';
 import { platform, IOS } from '@vkontakte/vkui';
-import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
-import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
