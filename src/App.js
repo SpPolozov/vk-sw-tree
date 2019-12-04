@@ -50,14 +50,14 @@ class App extends React.Component {
 						selected={this.state.activeStory === 'achivments'}
 						data-story="achivments"
 						text="">
-						<img src={menuAchivmentBlack} width="28px" />
+						<img src={(this.state.activeStory === 'achivments')?this.footer.menuAchivmentColor:this.footer.menuAchivment} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
 						selected={this.state.activeStory === 'settings'}
 						data-story="settings"
 						text="">
-						<img src={menuSettingsBlack} width="28px" />
+						<img src={(this.state.activeStory === 'settings')?this.footer.menuSettingsColor:this.footer.menuSettings} width="28px" />
 					</TabbarItem>
 				</Tabbar>
 			}>
