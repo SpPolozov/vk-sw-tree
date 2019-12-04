@@ -31,7 +31,6 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
-		<Footer />
 	</Panel>
 );
 
