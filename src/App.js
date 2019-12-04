@@ -33,8 +33,8 @@ const App = () => {
 	};
 
 	return (
-		<Root activeView="view">
-			<View activePanel={activePanel} popout={popout}>
+		<Root activeView="mainView">
+			<View id="mainView" activePanel={activePanel} popout={popout}>
 				<Home id='home' fetchedUser={fetchedUser} go={go} />
 				<Persik id='persik' go={go} />
 			</View>
