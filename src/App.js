@@ -77,7 +77,6 @@ class App extends React.Component {
 					</Panel>
 				</View>
 				<View id="feed">
-					<Home id='home' />
 				</View>
 			</Epic>
 		);
