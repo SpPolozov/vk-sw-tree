@@ -110,7 +110,7 @@ class App extends React.Component {
 						title: 'Сохранить промокод',
 						type: 'primary',
 						action: () => {
-							fetch('https://dv.sushiwok.ru/tree.json')
+							fetch('https://cdntree.32tb.ru/fmg/tree.json')
 								.then(res => {
 									if(res.status !== 200) {
 										console.log(res.status);
