@@ -103,10 +103,10 @@ class App extends React.Component {
 					id={MODAL_CARD_MONEY_SEND}
 					onClose={() => this.setActiveModal(null)}
 					icon={<img src={logoSw} alt="logo" />}
-					title="Отправляйте деньги друзьям, используя банковскую карту"
-					caption="Номер карты получателя не нужен — он сам решит, куда зачислить средства."
+					title="Ура! Сегодня удачный день и ты получаешь предложение"
+					caption="Всё просто - введи промокод F3FDE42 на сайте http://sushiwok.ru и получи скидку на супер набор!"
 					actions={[{
-						title: 'Попробовать',
+						title: 'Сохранить промокод',
 						type: 'primary',
 						action: () => {
 						}
