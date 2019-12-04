@@ -35,6 +35,7 @@ class App extends React.Component {
 			menuAchivmentColor: menuAchivmentColor,
 			menuSettingsColor: menuSettingsColor
 		};
+		connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273828, "key": "dBuBKe1kFcdemzB"});
 
 		this.presents = {
 			items: [
@@ -99,7 +100,6 @@ class App extends React.Component {
 
 	render () {
 		connect.send("VKWebAppInit", {});
-		connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273828, "key": "dBuBKe1kFcdemzB"});
 		const modal = (
 			<ModalRoot activeModal={this.state.activeModal}>
 				<ModalCard
