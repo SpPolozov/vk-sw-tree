@@ -36,14 +36,14 @@ class App extends React.Component {
 						onClick={this.onStoryChange}
 						selected={this.state.activeStory === 'achivments'}
 						data-story="achivments"
-						text="Поиск">
+						text="">
 						<img src={menuAchivmentBlack} width="28px" />
 					</TabbarItem>
 					<TabbarItem
 						onClick={this.onStoryChange}
 						selected={this.state.activeStory === 'settings'}
 						data-story="settings"
-						text="Поиск">
+						text="">
 						<img src={menuSettingsBlack} width="28px" />
 					</TabbarItem>
 				</Tabbar>
