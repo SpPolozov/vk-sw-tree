@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.js": "/vk-sw-tree/static/js/main.9cd64601.chunk.js",
-    "main.js.map": "/vk-sw-tree/static/js/main.9cd64601.chunk.js.map",
+    "main.js": "/vk-sw-tree/static/js/main.b83e55c1.chunk.js",
+    "main.js.map": "/vk-sw-tree/static/js/main.b83e55c1.chunk.js.map",
     "runtime-main.js": "/vk-sw-tree/static/js/runtime-main.5007d2d3.js",
     "runtime-main.js.map": "/vk-sw-tree/static/js/runtime-main.5007d2d3.js.map",
     "static/css/2.2cfa1b23.chunk.css": "/vk-sw-tree/static/css/2.2cfa1b23.chunk.css",
-    "static/js/2.ef7dc1db.chunk.js": "/vk-sw-tree/static/js/2.ef7dc1db.chunk.js",
-    "static/js/2.ef7dc1db.chunk.js.map": "/vk-sw-tree/static/js/2.ef7dc1db.chunk.js.map",
+    "static/js/2.0e47f61c.chunk.js": "/vk-sw-tree/static/js/2.0e47f61c.chunk.js",
+    "static/js/2.0e47f61c.chunk.js.map": "/vk-sw-tree/static/js/2.0e47f61c.chunk.js.map",
     "index.html": "/vk-sw-tree/index.html",
-    "precache-manifest.7fc4070f2403e939aa7f6bd73c70662b.js": "/vk-sw-tree/precache-manifest.7fc4070f2403e939aa7f6bd73c70662b.js",
+    "precache-manifest.75c877c7bc0775994dd78c8f6d64f373.js": "/vk-sw-tree/precache-manifest.75c877c7bc0775994dd78c8f6d64f373.js",
     "service-worker.js": "/vk-sw-tree/service-worker.js",
     "static/css/2.2cfa1b23.chunk.css.map": "/vk-sw-tree/static/css/2.2cfa1b23.chunk.css.map",
     "static/media/menu-achivment-black.svg": "/vk-sw-tree/static/media/menu-achivment-black.026d7112.svg",
+    "static/media/menu-achivment-color.svg": "/vk-sw-tree/static/media/menu-achivment-color.d2b6da22.svg",
     "static/media/menu-settings-black.svg": "/vk-sw-tree/static/media/menu-settings-black.e23e3378.svg",
-    "static/media/menu-tree-black.svg": "/vk-sw-tree/static/media/menu-tree-black.ad2fe359.svg"
+    "static/media/menu-settings-color.svg": "/vk-sw-tree/static/media/menu-settings-color.0b20913e.svg",
+    "static/media/menu-tree-black.svg": "/vk-sw-tree/static/media/menu-tree-black.ad2fe359.svg",
+    "static/media/menu-tree-color.svg": "/vk-sw-tree/static/media/menu-tree-color.7fe5cdb0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5007d2d3.js",
     "static/css/2.2cfa1b23.chunk.css",
-    "static/js/2.ef7dc1db.chunk.js",
-    "static/js/main.9cd64601.chunk.js"
+    "static/js/2.0e47f61c.chunk.js",
+    "static/js/main.b83e55c1.chunk.js"
   ]
 }
