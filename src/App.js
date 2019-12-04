@@ -70,9 +70,11 @@ class App extends React.Component {
 						<div className="main-status">
 							<div className="main-achivments bg-blue">
 								<img src={mainAchivments} alt="награды" />
+								<span className="main-status-counters">0</span>
 							</div>
 							<div className="main-keys bg-blue">
 								<img src={mainKeys} alt="ключики"/>
+								<span className="main-status-counters">0</span>
 							</div>
 						</div>
 						<div className="main-tree">

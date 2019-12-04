@@ -26,15 +26,24 @@
 }
 
 .main-achivments {
-     width: 100px;
-     float: left;
-     margin: 5px;
-     padding-left: 10px;
+    width: 100px;
+    float: left;
+    margin: 5px;
+    padding: 2px;
+    padding-left: 10px;
 }
 
 .main-keys {
     width: 100px;
-    float: left;
+    float: right;
     margin: 5px;
+    padding: 2px;
     padding-left: 10px;
+}
+
+.main-status-counters {
+    float: right;
+    margin-right: 25px;
+    margin-top: 12px;
+    font-size: 24px;
 }
