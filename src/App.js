@@ -21,6 +21,8 @@ class App extends React.Component {
 
 	render () {
 		return (
+			<div>123</div>
+			/*
 			<Epic activeStory={this.state.activeStory} tabbar={
 				<Tabbar>
 					<TabbarItem
@@ -79,6 +81,8 @@ class App extends React.Component {
 				<View id="feed">
 				</View>
 			</Epic>
+
+			 */
 		);
 	}
 }
