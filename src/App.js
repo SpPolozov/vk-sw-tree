@@ -7,7 +7,6 @@ import { Icon28Newsfeed, Icon28Search, Icon28Messages, Icon28Notifications, Icon
 
 
 import Home from './panels/Home';
-import Persik from './panels/Persik';
 
 class App extends React.Component {
 	constructor (props) {
