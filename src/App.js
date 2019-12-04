@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import connect from '@vkontakte/vk-connect';
 import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenSpinner';
 import '@vkontakte/vkui/dist/vkui.css';
@@ -85,6 +86,6 @@ class App extends React.Component {
 		);
 	}
 }
-<App />
-//export default App;
+
+export default App;
 
