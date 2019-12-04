@@ -142,7 +142,7 @@ class App extends React.Component {
 					</TabbarItem>
 				</Tabbar>
 			}>
-				<View id="presents" activePanel="presents">
+				<View id="presents" activePanel="presents" modal={modal}>
 					<Panel id="presents">
 						<PanelHeader><img className="PanelHeaderLogo" src={logoSw} alt="СушиWok" /></PanelHeader>
 						<div className="block-common">
