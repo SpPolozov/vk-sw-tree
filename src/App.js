@@ -85,6 +85,6 @@ class App extends React.Component {
 		);
 	}
 }
-
+<App />
 //export default App;
 
