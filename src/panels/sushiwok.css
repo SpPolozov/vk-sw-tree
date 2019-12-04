@@ -1,3 +1,7 @@
+body {
+    max-width: 450px;
+}
+
 .PanelHeaderLogo{
     height: 80%;
     margin-top: 5px;
@@ -64,8 +68,4 @@
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-}
-
-#root {
-    max-width: 450px;
 }
