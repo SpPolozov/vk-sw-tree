@@ -13,6 +13,7 @@ import logoSw from "./img/logo-sw.svg";
 import tree from "./img/first-xtree.svg";
 import mainAchivments from './img/main-achivment.svg';
 import mainKeys from './img/main-keys.svg';
+import presentClose from './img/present-close.svg';
 
 class App extends React.Component {
 	constructor (props) {
@@ -79,6 +80,9 @@ class App extends React.Component {
 						</div>
 						<div className="main-tree">
 							<img src={tree} alt="tree" />
+						</div>
+						<div className="present close">
+							<img src={presentClose} alt="подарок" />
 						</div>
 					</Panel>
 				</View>
