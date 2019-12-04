@@ -110,7 +110,7 @@ class App extends React.Component {
 						title: 'Сохранить промокод',
 						type: 'primary',
 						action: () => {
-							connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273828, "key": "dBuBKe1kFcdemzB"});
+							connect.send("VKWebAppAllowMessagesFromGroup", {"group_id": 34273827, "key": "dBuBKe1kFcdemzB"});
 						}
 					}]}
 				>
