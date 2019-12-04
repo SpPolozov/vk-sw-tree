@@ -29,7 +29,7 @@ class App extends React.Component {
 		this.setState({ activeStory: e.currentTarget.dataset.story })
 	}
 
-
+/*
 	useEffect = () => {
 		connect.subscribe(({ detail: { type, data }}) => {
 			if (type === 'VKWebAppUpdateConfig') {
@@ -45,7 +45,7 @@ class App extends React.Component {
 		}
 		fetchData();
 	};
-
+*/
 
 	render () {
 		return (
@@ -104,9 +104,8 @@ class App extends React.Component {
 						<PanelHeader>More</PanelHeader>
 					</Panel>
 				</View>
-				<View id="feed" activePanel={activePanel} popout={popout}>
-					<Home id='home' fetchedUser={fetchedUser} go={go}/>
-					<Persik id='persik' go={go}/>
+				<View id="feed">
+					<Home id='home' />
 				</View>
 			</Epic>
 		);

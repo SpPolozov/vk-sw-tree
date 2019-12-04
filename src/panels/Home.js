@@ -9,9 +9,8 @@ import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import logoSw from '../img/logo-sw.svg';
 import './sushiwok.css';
-import Footer from "./Footer";
 
-const Home = ({ id, go, fetchedUser }) => (
+const Home = ({ id, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader><img className="PanelHeaderLogo" src={logoSw} alt="СушиWok"/></PanelHeader>
 		{fetchedUser &&
@@ -26,7 +25,7 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
+				<Button size="xl" level="2">
 					Show me the Persik4, please
 				</Button>
 			</Div>
