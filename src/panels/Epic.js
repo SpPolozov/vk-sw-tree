@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { View, Panel, PanelHeader, Group, List, Cell, Tabbar, TabbarItem} from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
+import { Icon28Newsfeed, Icon28Search, Icon28Messages, Icon28Notifications, Icon28More} from '@vkontakte/icons/dist/28/chevron_back';
 import PropTypes from 'prop-types';
 import { platform, IOS } from '@vkontakte/vkui';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
