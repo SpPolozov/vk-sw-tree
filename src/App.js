@@ -76,6 +76,9 @@ class App extends React.Component {
 					</Panel>
 				</View>
 				<View id="feed">
+					<Panel id="feed">
+						<PanelHeader>Feed</PanelHeader>
+					</Panel>
 				</View>
 			</Epic>
 
